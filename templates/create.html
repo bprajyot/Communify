@@ -1,0 +1,438 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="{% static 'create.css' %}">
+    <!-- Boxicons CDN Link -->
+    <script src="https://kit.fontawesome.com/535241a19c.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOMEPAGE</title>
+   </head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <a href="index.html"><i class="fa-solid fa-group-arrows-rotate"></i></a>
+        <div class="logo_name">Communify</div>
+        <!-- <i class='bx bx-menu' id="btn" ></i> -->
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="create/">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li   onclick="show_list1()">
+       <a href="#">
+        <i class="fa-solid fa-plus"></i>
+         <span class="links_name" id="create"   >Create</span>
+       </a>
+       <span class="tooltip">Create</span>
+     </li>
+     <li>
+       <a href="message/">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Clubs</span>
+       </a>
+       <span class="tooltip">Clubs</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bx-heart' ></i>
+         <span class="links_name">Likes</span>
+       </a>
+       <span class="tooltip">Likes</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class="fa-regular fa-bell"></i>
+         <span class="links_name">notifications</span>
+       </a>
+       <span class="tooltip">notifications</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class="fa-regular fa-bookmark"></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Settings</span>
+       </a>
+       <span class="tooltip">Settings</span>
+     <!-- </li>
+      <li class="profile">
+         <div class="profile-details">
+          <img src="profile.jpg" alt="profileImg">
+           
+         </div>
+        
+     </li>  -->
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <section class="home-section">
+      
+
+
+
+
+
+<div class="head">
+<div class="log active">
+    <div class="logo-details">
+     
+        <div class="logo_name">Communify</div>
+      
+    </div>
+
+
+
+</div>
+
+
+<div class="profile">
+
+<div class="profimg">
+    <img src="{% static 'profile.jpg' %}" class="image--cover">
+
+</div>
+<div class="profname">
+Pramod patil
+
+<i class="fas fa-caret-down"></i>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="feed">
+  <div class="post-container">
+    <div class="acc">
+  
+      <div class="p-img">
+  <img src="{% static 'profile.jpg' %}" >
+      </div>
+      <div class="p-name">
+        <p>Team Quark</p>
+      </div>
+  
+    </div>
+        <div class="p-title">
+  <h2>Let's connect and discover to create a brighter future</h2>
+        </div>
+        <div class="des">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione facilis odio tenetur quisquam reprehenderit quam rem, maxime ut earum assumenda sit, dolores blanditiis asperiores nam ab! Esse, error porro!</p>
+  
+        </div>
+        <div class="footer">
+  <button class="like"   ><i class="fa-regular fa-heart"  onclick="show_list2()"  ></i></button>
+  <button class="comment"><i class="fa-regular fa-comment"></i></button>
+  <button class="save"><i class="fa-regular fa-bookmark"  onclick="show_list3()"  ></i></button>
+  <button class="share"><i class="fa-regular fa-share-from-square"></i></button>
+  
+  
+        </div>
+  
+  
+  
+  
+    </div>
+  
+    <div class="post-container">
+      <div class="acc">
+    
+        <div class="p-img">
+    <img src="{% static 'profile.png' %}" >
+        </div>
+        <div class="p-name">
+          <p>Veloce Racing</p>
+        </div>
+    
+      </div>
+          <div class="p-title">
+    <h2>The Evolution of Cars: From the First Automobile to Modern Vehicles</h2>
+          </div>
+          <div class="des">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione facilis odio tenetur quisquam reprehenderit quam rem, maxime ut earum assumenda sit, dolores blanditiis asperiores nam ab! Esse, error porro! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem minus quibusdam cupiditate necessitatibus itaque ab perspiciatis sed? Deleniti eum, at dolorem temporibus placeat quo itaque distinctio laborum neque, omnis quibusdam.</p>
+            <div class="desimg">
+
+              <img src="{% static 'car.jpg' %}" alt="image--cover">
+              
+              </div>
+          </div>
+          <div class="footer">
+            <button class="like"   ><i class="fa-regular fa-heart"  onclick="show_list2()"  ></i></button>
+    <button class="comment"><i class="fa-regular fa-comment"></i></button>
+    <button class="save"><i class="fa-regular fa-bookmark"></i></button>
+    <button class="share"><i class="fa-regular fa-share-from-square"></i></button>
+    
+    
+          </div>
+    
+    
+    
+    
+      </div>
+      <div class="post-container">
+        <div class="acc">
+      
+          <div class="p-img">
+      <img src="{% static 'profile.png' %}" >
+          </div>
+          <div class="p-name">
+            <p>Social welfare and development</p>
+          </div>
+      
+        </div>
+            <div class="p-title">
+      <h2>Building Strong Communities: Strategies for Bringing People Together</h2>
+            </div>
+            <div class="des">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione facilis odio tenetur quisquam reprehenderit quam rem, maxime ut earum assumenda sit, dolores blanditiis asperiores nam ab! Esse, error porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, a suscipit placeat quisquam magnam natus saepe? Tempora, aliquid, veritatis, quidem quibusdam accusantium tempore ad iste vitae exercitationem nesciunt molestiae maiores.</p>
+      
+              <div class="desimg">
+
+                <img src="{% static 'comm1.jpg' %}" alt="image--cover">
+                
+                </div>
+
+            </div>
+            <div class="footer">
+              <button class="like"   ><i class="fa-regular fa-heart"  onclick="show_list2()"  ></i></button>
+      <button class="comment"><i class="fa-regular fa-comment"></i></button>
+      <button class="save"><i class="fa-regular fa-bookmark"></i></button>
+      <button class="share"><i class="fa-regular fa-share-from-square"></i></button>
+      
+      
+            </div>
+      
+      
+      
+      
+        </div>
+        
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+
+
+
+<div class="rightside">
+
+<div class="suggest">
+
+
+</div>
+
+<div class="not">
+
+  
+</div>
+
+
+
+</div>
+
+
+      
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+  <div class="container hide">
+    <div class="wrapper">
+      <section class="post">
+        <header>Create Post</header>
+        <form action="#">
+          <div class="content">
+            <!-- <img src="icons/logo.png" alt="logo"> -->
+            <div class="details">
+              <p>For</p>
+              <div class="privacy">
+                <i class="fas fa-user-friends"></i>
+                <span>All</span>
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="TIT">
+          
+            <textarea class="tit" placeholder="Title" spellcheck="false" required></textarea>
+                     
+          </div>
+         
+          <textarea placeholder="Description?" spellcheck="false" required></textarea>
+          <!-- <div class="theme-emoji">
+            <img src="icons/theme.svg" alt="theme">
+            <img src="icons/smile.svg" alt="smile">
+          </div> -->
+          <div class="options">
+            <p>Add to Your Post</p>
+            <ul class="list">
+              <li><i class="fa-solid fa-images"></i></li>
+              <li><i class="fa-solid fa-face-smile"></i></li>
+              <li><i class="fa-solid fa-link"></i></li>
+              <!-- <li><img src="icons/mic.svg" alt="gallery"></li> -->
+              <li><i class="fa-solid fa-ellipsis"></i></li>
+            </ul>
+          </div>
+          <button>Post</button>
+        </form>
+      </section>
+      <section class="audience">
+        <header>
+          <div class="arrow-back"><i class="fas fa-arrow-left"></i></div>
+          <p>Select Audience</p>
+        </header>
+        <div class="content">
+          <p>Who can see your post?</p>
+          <span>Your post will show up in News Feed, on your profile and in search results.</span>
+        </div>
+        <ul class="list">
+          <li>
+            <div class="column">
+              <div class="icon"><i class="fas fa-globe-asia"></i></div>
+              <div class="details">
+                <p>Public</p>
+                <!-- <span>Anyone on or off Facebook</span> -->
+              </div>
+            </div>
+            <div class="radio"></div>
+          </li>
+          <li class="active">
+            <div class="column">
+              <div class="icon"><i class="fas fa-user-friends"></i></div>
+              <div class="details">
+                <p>Members</p>
+                <!-- <span>Your friends on Facebook</span> -->
+              </div>
+            </div>
+            <div class="radio"></div>
+          </li>
+          <li>
+            <div class="column">
+              <div class="icon"><i class="fas fa-user"></i></div>
+              <div class="details">
+                <p>Specific</p>
+                <span>Only show to some friends</span>
+              </div>
+            </div>
+            <div class="radio"></div>
+          </li>
+          <li>
+            <div class="column">
+              <div class="icon"><i class="fas fa-lock"></i></div>
+              <div class="details">
+                <p>Only me</p>
+                <span>Only you can see your post</span>
+              </div>
+            </div>
+            <div class="radio"></div>
+          </li>
+          <li>
+            <div class="column">
+              <div class="icon"><i class="fas fa-cog"></i></div>
+              <div class="details">
+                <p>Custom</p>
+                <span>Include and exclude friends</span>
+              </div>
+            </div>
+            <div class="radio"></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  
+
+
+  
+
+
+ 
+  
+  <script src="{% static 'create.js' %}">
+
+  </script>
+</body>
+</html>
+ 

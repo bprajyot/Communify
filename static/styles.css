@@ -1,0 +1,528 @@
+
+
+body {
+ 
+   
+    position: relative;
+    margin: 0;
+  padding: 0;
+   
+  }
+  
+  
+
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+  }
+  #myVideo {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+
+  }
+  .container_1 {
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+box-sizing: border-box;
+
+    position: absolute;
+  }
+  #container_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  *,
+  *::after,
+  *::before{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .html{
+      font-size: 32.5%;
+  }
+  
+  .navbar input[type="checkbox"],
+  .navbar .hamburger-lines{
+      display: none;
+  }
+  
+  .vontainer{
+      max-width: 1200px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      height: 94px;
+   
+      align-items: center;
+      padding-top: 30px;
+  }
+  
+  .navbar{
+     
+      position: relative;
+      width: 100%;
+     
+      color: rgb(0, 0, 0);
+     
+      z-index: 100;
+    
+  }
+  
+  /* .navbar-container{
+    
+  } */
+  
+  .menu-items{
+      order: 2;
+      display: flex;
+    
+  }
+  .logo{
+      order: 1;
+      font-size: 2.0rem;
+      color: rgb(255, 255, 255);
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+.logos a{
+
+
+
+    position: absolute;
+    left: 80px;
+ top: 45px;
+
+}
+.logos a i{
+    font-size: 2.0rem;
+
+}
+
+
+  
+  .menu-items li{
+      list-style: none;
+      margin-left: 3.9rem;
+      font-size: 1.1rem;
+ 
+  }
+  
+  .navbar a{
+     
+      text-decoration: none;
+      font-weight: 100;
+      opacity: 1;
+      transition: color 0.3s ease-in-out;
+      font-family: 'DM Sans', sans-serif;
+font-size: 20px;
+      color: #ffffff;
+  }
+  
+
+  
+  
+  .navbar a:hover{
+      color: #9749ce;
+      border-bottom: #FFF;
+      
+  }
+
+
+  .navbar .menu-items li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-left: 3.3rem;
+    position: relative;
+}
+
+.navbar .menu-items li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar .menu-items li span {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar .menu-items li:hover span {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 768px){
+      .navbar{
+          opacity: 0.95;
+      }
+  
+      .navbar-container input[type="checkbox"],
+      .navbar-container .hamburger-lines{
+          display: block;
+      }
+  
+      .navbar-container{
+          display: block;
+          position: relative;
+          height: 64px;
+      }
+  
+      .navbar-container input[type="checkbox"]{
+          position: absolute;
+          display: block;
+          height: 32px;
+          width: 30px;
+          top: 20px;
+          left: 20px;
+          z-index: 5;
+          opacity: 0;
+          cursor: pointer;
+      }
+  
+      .navbar-container .hamburger-lines{
+          display: block;
+          height: 28px;
+          width: 35px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+  
+      .navbar-container .hamburger-lines .line{
+          display: block;
+          height: 4px;
+          width: 100%;
+          border-radius: 10px;
+          background: #333;
+      }
+      
+      .navbar-container .hamburger-lines .line1{
+          transform-origin: 0% 0%;
+          transition: transform 0.3s ease-in-out;
+      }
+  
+      .navbar-container .hamburger-lines .line2{
+          transition: transform 0.2s ease-in-out;
+      }
+  
+      .navbar-container .hamburger-lines .line3{
+          transform-origin: 0% 100%;
+          transition: transform 0.3s ease-in-out;
+      }
+  
+      .navbar .menu-items{
+        color: #fff;
+          padding-top: 100px;
+          background-color: #000000;
+          height: 100vh;
+          max-width: 300px;
+          transform: translate(-150%);
+          display: flex;
+          flex-direction: column;
+          margin-left: -60px;
+          padding-left: 10px;
+          transition: transform 0.5s ease-in-out;
+          
+          overflow: scroll;
+      }
+  
+      .navbar .menu-items li{
+        color: #fff;
+          margin-bottom: 1.8rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+      }
+  
+      .logo{
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 1.5rem;
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+          transform: translateX(0);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+          transform: rotate(45deg);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+          transform: scaleY(0);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+          transform: rotate(-45deg);
+      }
+  
+  }
+  
+  @media (max-width: 500px){
+      .navbar-container input[type="checkbox"]:checked ~ .logo{
+          display: none;
+      }
+  }
+  
+
+
+
+#myBtn {
+    width: 120px;
+    font-size: 18px;
+    position: relative;
+
+    top: 600px;
+    left: 100px;
+    padding: 6px;
+    border: 1px solid white;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ffffff;
+    color: black;
+    border: 1px solid black;
+  }
+
+
+
+
+.mainText{
+  
+
+    position: relative;
+    left: 580px;
+    top: 30px;
+  
+   
+    height: 45%;
+    width: 62%;
+    }
+
+  
+
+
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    
+    top: 50px;
+}
+.container .text{
+
+    position: relative;
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+.container .text.first-text{
+    color: #FFF;
+    margin-left: 30px;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+.semi{
+position: relative;
+top: 90px;
+height: 30%;
+   
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.semiMain{
+
+    position: relative;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Ubuntu', sans-serif;
+letter-spacing: 0.02em;
+
+
+}
+
+
+
+.buttons{
+
+
+width: 40%;
+position: relative;
+
+left: 580px;
+bottom: 100px;
+}
+
+
+#btn1  {
+
+    background: none;
+    border-radius: 1px;
+    border: 1px solid #ffffff ;
+  position: relative;
+  left: 170px;
+  bottom: 20px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+ text-decoration: none;
+    margin: 10px;
+   
+    margin-top: 140px;
+    margin-left: 15px;
+    
+    padding: 15px 30px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+
+#btn1:hover {
+    background-color: #ffffff;
+    color: #000 !important;
+}
+
+
+#btn1 a{
+
+
+text-decoration: none;
+color: #fff;
+
+}
+
+#btn1 a:hover{
+
+    color: #000 !important;
+
+}
+
+
+
+
+
+
+   
+/* } 
+#btn2 {
+    text-transform: uppercase;
+    background:none;
+    border-radius: 1px;
+    border: 0.1px solid #ffffff  ;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+ height: 49.5px;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    margin-left: 30px;
+    
+}
+#btn2:hover {
+    background-color: #5EFCE8 ;
+  
+} */
+
+
+
+.container_2 {
+
+         position: relative;
+        background: white;
+     top: 100vh;
+        width: 100%;
+        height:100vh;
+       
+  } 
+
+  .textt{
+
+    height: 80%;
+    width: 50%;
+    border: 1px solid red;
+   position: relative;
+   top: 150px;
+
+  }
+
+  @media (max-width: 768px) {
+    .navbar .menu-items {
+      display: none;
+      /* Remove the following line */
+      /* transform: translate(-150%); */
+    }
+  }

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+.front_end{
+    display: flex;
+    justify-content: center;
+}
+
+.back_end{
+    display: flex;
+    justify-content: center;
+}
+
+.img1 {
+    border-radius: 50vh;
+    height: 15vh;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.9);
+  }
+  
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 0 1vw;
+    margin-left:-1.6vw ;
+    font-size: x-large;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.main_box{
+    /* border: 3px solid rgba(118, 118, 118, 0.256); */
+    border-radius: 15px;
+    width: 20vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:5px ;
+    margin: 18vh 5vw 0.5vh 5vw;
+    box-shadow: 1px 5px 10px rgba(68, 67, 67, 0.479);
+
+}
+
+.name{
+    font-size: xx-large;
+    margin-top: 2vh;
+    font-family: 'Arvo', serif;
+}
+
+
+.description{
+    margin: 5vh 1vw;
+    text-align: justify;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bolder;
+}
+
+.social_media{
+    display: inline-flex;
+}
+
+.img2 {
+    height: 5.5vh;
+    border-radius: 50vw;
+    margin: -10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.number{
+    font-weight: bolder;
+    margin-top: 25px;
+    /* color: blue; */
+    font-family: 'Fira Sans Condensed', sans-serif;
+}

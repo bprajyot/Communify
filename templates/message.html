@@ -1,0 +1,307 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <script src="https://kit.fontawesome.com/535241a19c.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+<a href="https://icons8.com/icon/21730/double-tick"></a>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'message.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar open">
+    <div class="logo-details">
+      <a href="index.html"><i class="fa-solid fa-group-arrows-rotate"></i></a>
+        <div class="logo_name">Communify</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="create.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li   onclick="show_list1()">
+       <a href="#">
+        <i class="fa-solid fa-plus"></i>
+         <span class="links_name" id="create"   >Create</span>
+       </a>
+       <span class="tooltip">Create</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Clubs</span>
+       </a>
+       <span class="tooltip">Clubs</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bx-heart' ></i>
+         <span class="links_name">Likes</span>
+       </a>
+       <span class="tooltip">Likes</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class="fa-regular fa-bell"></i>
+         <span class="links_name">notifications</span>
+       </a>
+       <span class="tooltip">notifications</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class="fa-regular fa-bookmark"></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     <!-- </li>
+      <li class="profile">
+         <div class="profile-details">
+          <img src="profile.jpg" alt="profileImg">
+           
+         </div>
+        
+     </li>  -->
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+  <section class="home-section">
+<!-- 
+<div class="profnames">
+
+
+    
+</div> -->
+
+<div class="mainb">
+
+<div class="profnames">
+
+<div class="messn">
+
+<h2>messages</h2>
+
+
+</div>
+
+
+  <div class="acc">
+    
+    <div class="p-img">
+<img src="profile.png" >
+    </div>
+    <div class="p-name">
+      <p class="maint">Quark</p>
+      <p class="subd">hey,how are you boy Loresr sit,,....</p>
+    </div>
+
+  </div>
+
+  <div class="acc">
+    
+    <div class="p-img">
+<img src="{% static 'car.jpg' %}" >
+    </div>
+    <div class="p-name">
+      <p>Veloce Racing</p>
+      <p class="subd">hey,how are you boy </p>
+    </div>
+
+  </div>
+
+
+  <div class="acc">
+    
+    <div class="p-img">
+<img src="{% static 'loginban.jpg' %}" >
+    </div>
+    <div class="p-name">
+      <p>TRF</p>
+      <p class="subd">hey,how are you boy </p>
+    </div>
+
+  </div>
+
+  <div class="acc">
+    
+    <div class="p-img">
+<img src="{% static 'comm1.jpg' %}" >
+    </div>
+    <div class="p-name">
+      <p>Griffin</p>
+      <p class="subd">hey,how are you boy </p>
+    </div>
+
+  </div>
+</div>
+<div class="messagebox">
+
+<div class="headd">
+
+  <div class="accc">
+  
+      <div class="p-imgg">
+  <img src="{% static 'profile.jpg' %}" >
+      </div>
+      <div class="p-namee">
+        <p>Pramod</p>
+      </div>
+  
+    </div>
+
+<div class="menu">
+  <i class="fa-solid fa-ellipsis-vertical"></i>
+</div>
+
+</div>
+
+<div class="mainmess">
+  <!-- <div class="othermess">
+    <p>kay re lavdya</p>
+  </div>
+  <div class="mymess">
+    <p>hi<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8ElEQVR4nO2XzUocQRDHR4PHaE4qORnxvMt2uQZCkPgOeo9CvAUPW7WrJ1/Aj3cxGPIIISFx8SPqK7iyVbA5RC8jPTuKB53p0aZ3CPU7/xiquqf/XR1FiqIoiqKUj7nPl6NA/N2Q/PbpBmVpKX5hkPeBJAaUX1EUD7m7JcKQbNvCDPJlbV1mfLlBMcgfk9UlvgbiBV9uUKDVfQ/E/5IVJln15Qal2uIpQL5I//UtX25Q3lHnJaAc9gvjb/YA+3DDshkPA8leWtgfaHXHvLihMSg7zgmF7m5QNKHKwn+TUIbkyDWhjKMbFps6yF+cEwod3dBoQpUFnaGeAiD/BJR2Hf9ORp5IX24n6W28n5U6RdxMbBPpbH/qo5nk5Ub8tV+YHNtCfbi5VBq9cfuR/nzP5zXqvI6eAZDsus5FRdygzdSavOz6civiBm0mSSjkK+dXnqMbtJm5Br9xnYuKuEGbKfUMVXFsxhbiOhcVcb1io9hGclY036YOEHdm12UaVuMRaPJidY1f5blRSOoZzRjkT+nqXtUa3fmk2CYvpgf4yO5qlhuc+gPNQIM/9GNT4lnilVvX7sTdGSA+ebvRm3jMHXgzBvnMXmDpym9nnq8cdyBU7hWYlzpF3MHtDErbEP/Im4usa0gOXFxFURRFUSI/3AAIHvIhW06eyAAAAABJRU5ErkJggg=="></p>
+  </div>
+ 
+  
+  <div class="mymess">
+    <p> tu chutiya</p>
+  </div>
+  <div class="mymess">
+    <p>  priya, we are in same batch do you wanna be friends   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8ElEQVR4nO2XzUocQRDHR4PHaE4qORnxvMt2uQZCkPgOeo9CvAUPW7WrJ1/Aj3cxGPIIISFx8SPqK7iyVbA5RC8jPTuKB53p0aZ3CPU7/xiquqf/XR1FiqIoiqKUj7nPl6NA/N2Q/PbpBmVpKX5hkPeBJAaUX1EUD7m7JcKQbNvCDPJlbV1mfLlBMcgfk9UlvgbiBV9uUKDVfQ/E/5IVJln15Qal2uIpQL5I//UtX25Q3lHnJaAc9gvjb/YA+3DDshkPA8leWtgfaHXHvLihMSg7zgmF7m5QNKHKwn+TUIbkyDWhjKMbFps6yF+cEwod3dBoQpUFnaGeAiD/BJR2Hf9ORp5IX24n6W28n5U6RdxMbBPpbH/qo5nk5Ub8tV+YHNtCfbi5VBq9cfuR/nzP5zXqvI6eAZDsus5FRdygzdSavOz6civiBm0mSSjkK+dXnqMbtJm5Br9xnYuKuEGbKfUMVXFsxhbiOhcVcb1io9hGclY036YOEHdm12UaVuMRaPJidY1f5blRSOoZzRjkT+nqXtUa3fmk2CYvpgf4yO5qlhuc+gPNQIM/9GNT4lnilVvX7sTdGSA+ebvRm3jMHXgzBvnMXmDpym9nnq8cdyBU7hWYlzpF3MHtDErbEP/Im4usa0gOXFxFURRFUSI/3AAIHvIhW06eyAAAAABJRU5ErkJggg=="></p>
+
+  </div>
+  <div class="othermess">
+    <p>pahila tu mirror madhe tond bagh ani magh tuzyat self respect baaki asli tr hei prashna vichar</p>
+  </div>
+ -->
+ <!-- <div class="othermess">
+  <p>hi ,who are you</p>
+</div> -->
+
+
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+<div class="foot">
+
+  <div class="other">
+
+<a href="#"><i class="fa-regular fa-face-smile"></i></a>
+<a href="#"><i class="fa-regular fa-image"></i>  <input id="file-upload" type="file" accept="image/*" style="display: none;"
+  >
+
+</a>
+
+
+  </div>
+
+<div class="texti">
+
+    <textarea id="text-area" name="w3review" rows="4" cols="50" placeholder="Start messaging"></textarea>
+  
+<button id="send-button"><i class="fa-solid fa-arrow-right-long"></i></button>
+
+</div>
+
+
+</div>
+
+
+  
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+  </section>
+
+
+
+  <script>
+
+const messageBox = document.getElementsByClassName("mainmess")[0];
+const textArea = document.getElementById("text-area");
+const sendButton = document.getElementById("send-button");
+
+sendButton.addEventListener("click", () => {
+  const text = textArea.value;
+  if (text.trim() !== "") {
+    const messageDiv = document.createElement("div");
+    messageDiv.classList.add("mymess");
+    const messageText = document.createElement("p");
+    messageText.textContent = text;
+    messageDiv.appendChild(messageText);
+    messageBox.insertAdjacentElement("beforeend", messageDiv);
+    textArea.value = "";
+  }
+});
+
+
+textArea.addEventListener("keydown", (event) => {
+  if (event.keyCode === 13 && !event.shiftKey) {
+    event.preventDefault(); // Prevent the default "Enter" key behavior
+    sendButton.click(); // Trigger a click event on the sendButton
+  }
+});
+
+
+  </script>
+
+
+</body>
+</html>

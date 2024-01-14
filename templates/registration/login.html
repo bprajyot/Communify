@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/535241a19c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+{% if request.user.is_authenticated %} 
+{% endif %}
+
+    <section class="home-section">
+        <!-- 
+        <div class="profnames">
+        
+        
+            
+        </div> -->
+        
+        <div class="mainb">
+        
+        <div class="profnames">
+        
+        <!-- <div class="messn">
+        
+        <h2>messages</h2>
+        
+        
+        </div> -->
+        
+        <img src="{% static 'logb2.jpg' %}" alt="" >
+        
+         
+        </div>
+        <div class="messagebox">
+        
+            <div class="logo">
+                <div class="logo-details">
+                    <a href="index.html"><i class="fa-solid fa-group-arrows-rotate"></i></a>
+                      <div class="logo_name">Communify</div>
+                  
+                  </div>
+
+            </div>
+
+            <form class="logi"  method="POST">
+                {% csrf_token %}
+                <div class="inhtm">
+                    {% if form.errors %}
+                    <div class="alert alert-primary" role="alert">
+                        Error: Username or Password not correct!
+                    </div>
+                    {% endif %}
+                    <div class="group">
+                        <label for="user" class="label">{{ form.username.label }}</label>
+                        {{ form.username }}
+                        <!--<input id="Email" type="text" class="input">-->
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">{{ form.password.label }}</label>
+                        {{ form.password }}
+                        <!--<input id="pass" type="password" class="input" data-type="password">-->
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Log in" style="color: aliceblue; ;">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="/forgot/">Forgot Password?</a>
+                        <a href="/account/signup">SignUp</a>
+                    
+                   
+                    
+                </div>
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+            
+        
+        
+        
+          
+        
+        </div>
+        
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+          </section>
+
+    
+</body>
+</html>

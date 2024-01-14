@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="{% static 'base.css' %}">
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="UTF-8">
+  
+  <script src="{% static 'create.js' %}"></script>
+  <!-- Boxicons CDN Link -->
+  <script src="https://kit.fontawesome.com/535241a19c.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <a href="index.html"><i class="fa-solid fa-group-arrows-rotate"></i></a>
+      <div class="logo_name">Communify</div>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="create.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li onclick="show_list1()">
+        <a href="post.html">
+          <i class="fa-solid fa-plus"></i>
+          <span class="links_name" id="create">Create</span>
+        </a>
+        <span class="tooltip">Create</span>
+      </li>
+      <!-- Rest of the menu items -->
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="mt-5">
+            {% block content %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // JavaScript code
+  </script>
+</body>
+</html>

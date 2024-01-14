@@ -1,0 +1,298 @@
+body{
+
+margin: 0;
+padding: 0;
+
+}
+
+section{
+
+min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.mainb{
+
+    height: 80vh;
+    width: 75%;
+    position: relative;
+    display: flex;
+    background-color: #fff;
+
+    border-radius: 10px;
+    }
+
+
+    .profnames{
+    
+    
+    height: 100%;
+    width: 50%;
+    
+
+    
+    
+    position: relative;
+    
+    
+   
+    
+    
+
+    
+    }
+
+    .profnames img{
+
+
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+
+
+/*     
+    
+    .messn{
+      position: relative;
+    height: 8%;
+    
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    }
+    
+    .messn h2{
+    
+      margin-left: 10px;
+      margin-top: 10px;
+    
+    }
+    
+    
+    
+    
+    .acc{
+      display: flex;
+     
+      border-bottom: 1px solid #ccc;
+    
+      background-color: #fff;
+      }
+      
+      .p-img{
+      
+      
+        border-radius: 50%;
+        height:50px ;
+        width:50px;
+        margin-left: 20px; */
+        /* margin-top: 5px;
+        margin-bottom:10px ;
+      
+      }
+      .p-img img{
+      
+      border-radius: 50%;
+      height:100% ;
+      width:100%;
+      }
+      
+      .p-name{
+      
+        margin-left: 9px;
+    margin-top: 10px;
+      
+        height: 60%;
+      }
+      
+      .p-name p{
+      
+      
+        
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: 400;
+    
+      white-space: nowrap;
+      pointer-events: none;
+      font-family: 'Open Sans', sans-serif;
+      }
+    
+     */
+
+     .messagebox{
+
+
+
+height: 100%;
+width: 50%;
+
+     }
+    
+      .logo{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 17%;
+
+
+      }
+
+
+
+
+
+      .logo-details{
+        height: 60px;
+   display: flex;
+   position: relative;
+   top: 30px;
+   right: 50px;
+      }
+      .logo-details  .icon{
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+    .logo_name {
+        color: #11101D;
+        font-size: 30px;
+        font-weight: 600;
+        opacity: 0;
+        position: relative;
+        bottom: 5px;
+        transition: all 0.5s ease;
+      }
+  .logo-details .icon,
+    .logo_name{
+        opacity: 1;
+      }
+   
+      i{
+        color: #11101D;
+       
+        min-width: 50px;
+        font-size: 28px;
+        text-align: center;
+        line-height: 60px;
+      }
+
+      form{
+
+    
+        height: 82%;
+
+      }
+      
+      .inhtm{
+     
+
+position: relative;
+top: 15%;
+
+      }
+      .group{
+
+
+padding-left: 60px;
+padding-top: 10px;
+position: relative;
+left: 30px;
+      }
+
+
+form .group .label,
+form .group .input,
+form .group .button{
+	width:40%;
+	color:rgb(0, 0, 0);
+    
+	display:block;
+    font-size: 18px;
+}
+
+
+form .group .input,
+form .group .button{
+	border:none;
+	padding:9px 56px;
+	border-radius:5px;
+	background:rgb(255, 255, 255);
+    border: 1px solid #ccc;
+}
+
+
+
+form .group .label{
+	color:#4f4949;
+	font-size:18px;}
+
+
+
+ form .group .button{
+  position: relative;
+
+height: 40px;
+width: 65%;
+
+font-size: 18px;
+background: #007FFF;
+  }
+form .group .button:hover{
+
+  background: #181638;
+      color: #ffffff ;
+  }
+
+
+form .group label .icon{
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    background:rgba(255,255,255,.1);
+  }
+
+
+ form .group label .icon:before,
+form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+  position: relative;
+left: 34%;
+}
+
+
+.foot-lnk a{
+
+outline: none;
+color: #4f4949;
+text-decoration: none;
+
+}
+.foot-lnk a:hover{
+
+    color: #52f0e8;
+}
+
+
